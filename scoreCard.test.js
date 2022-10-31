@@ -7,10 +7,14 @@ describe('calculates the score from a given game', () => {
   })
 
   it('should be able to calculate score of only 0s', () => {
-    expect(bowlingScore([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])).toBe(0)
+    expect(bowlingScore([0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0])).toBe(0)
   })
 
   it('should be able to calcualte score of only spares', () => {
     expect(bowlingScore([9,1, 9,1, 9,1, 9,1, 9,1, 9,1, 9,1, 9,1, 9,1, 9,1, 9])).toBe(190)
+  })
+
+  it('should be able to calcualte score of only incomplete throws', () => {
+    expect(bowlingScore([8,1, 8,1, 8,1, 8,1, 8,1, 8,1, 8,1, 8,1, 8,1, 8,1])).toBe(90)
   })
 })
