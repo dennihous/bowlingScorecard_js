@@ -8,10 +8,11 @@
 
 #### Spare
 
-
 3) If rolls[i]+rolls[i+1] === 10 add rolls[i] + rolls[i+1]+ rolls[i+2] to score
 
-4) If rolls[rolls.length-3] === 10, make sure there is an extra go at the end
+#### Final frame
 
-5) If rolls[rolls.length-3]+rolls[rolls.length-2] === 10, make sure there is an extra go at the end
+4) If rolls[rolls.length-3] === 10 and is frame 10, make sure there is an extra go at the end
+
+5) If rolls[rolls.length-3]+rolls[rolls.length-2] === 10 and is frame 10, make sure there is an extra go at the end
 
